@@ -33,18 +33,19 @@ console.clear();
 
 //program task
 
-// const number=5
+const number=6
 
-// if(number=){
-//     console.log("the number is positive");
-// }
-// else if(number=negative){
-//     console.log("the number is negative");
-// }
-// else{
-//     console.log("the given number is zero");
-// }
-
+ if(number==0){
+     console.log("the given number is zero");
+    }
+    else{
+        if(number%2==0){
+        console.log("the number is even");
+    }
+        else{
+        console.log("the number is odd");
+    }
+    }
 // const kutravali = "varun"
 // let   Case= 3
 // if(kutravali=="varun"){
@@ -98,7 +99,7 @@ else{
         console.log(num1)
     }
 }    
-console.clear()
+
 
 
 const diapper=450
@@ -109,3 +110,4 @@ const days=30
  let dayscount=(days*perdayUsage)
  let perday=(dayscount/Quantity)*450
  console.log(perday)
+
