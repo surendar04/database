@@ -48,10 +48,59 @@ let math = new Arithemecti(1,5)
 console.log(math.subration())
 Math
 
+console.clear()
+
+function powerstar(a,b){
+         
+  if(b==0){
+      b=2
+    console.log("instead of 0 using 2")
+    }
+   
+  let division=(a/b)
+  return division
+}
+// console.log(powerstar(5,0))
 
 
+function arthimeticFight(operator,vikram,vedha){
+  switch(operator){
+    case "+":
+      operation= vikram+vedha
+    break;
 
+    case "-":
+      if(vedha>vikram){
+        operation=vedha-vikram       
+      }
+      else{
 
+        operation= vikram-vedha
+      }
+  break;
 
+    case "*":
+          operation= vikram*vedha
+        break;
 
+    case "/":
+        if(vedha==0){
+          console.log("this cannot be used")
+        }
+        else if(vikram==0){
+            console.log("this cannot be used")
+        
+          }
+        else{
+          operation= vikram/vedha
+        }
+        break;
 
+    default:
+        console.log("enter something")
+        break;
+}
+return operation
+}
+let fight= arthimeticFight("+",5,9)
+console.log(fight)
