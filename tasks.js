@@ -1,4 +1,5 @@
-//task1
+
+console.clear()
 
 function storeAndPrintArray(arr1,arr2){
       let array3=[true,false]
@@ -44,9 +45,68 @@ const sumOftheArray  = (arr) =>{
     }
     return sum
 }    
-let arr1 = [12,3,'bs',4,54]
-let arr2 = ['a','s','f']
-// storeAndPrintArray(arr1,arr2)
-// let result=reversed(arr1)
- let result=sumOftheArray(arr1)
-console.log(result)
+
+
+
+const countingValues = (arr=['a','a','b'])=>{
+    let A=0,B=0
+    let out = {
+        a:0,
+        b:0
+    }
+
+    for(i=0;i<arr.length;i++){
+        if(arr[i]=="a"){
+            out.a++            
+        }
+        else if (arr[i]=="b"){
+            out.b++
+        }
+        else
+            console.log("this is unexpected")
+        
+    }
+    return JSON.stringify(out)
+}
+
+
+const minmumOfArray=(arr=[10,3,6,7,-800,90])=>{
+    let temp=0
+    let result= arr[0]
+    for (i=0;i<arr.length-1;i++){
+        // temp =0 
+        if(arr[i]<arr[i+1]){
+            temp=arr[i]
+        }
+        else{
+            temp=arr[i+1]
+        }
+        console.log(`fist value ${arr[i]}  second value ${arr[i+1]}   temp ${temp}`)
+
+        console.log(`temp ${temp} result ${result}`)
+        if(temp<result){
+            console.log(temp)
+            result=temp
+        }
+        
+    }
+}
+
+
+
+const countOddOrEven=(num=[1,7,8,4,6])=>{
+    let even=[]
+    let odd=[]
+    
+    // num.forEach( e => e%2==0 ? even.push(e) : odd.push(e) )
+    num.forEach((e,i,a)=>{
+        if(e%2==0){
+            even.push(e)
+        }
+        else{
+            odd.push(e)
+        }
+    });
+    console.log(`odd ${odd} even ${even}`)
+}
+countOddOrEven()
