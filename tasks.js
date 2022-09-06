@@ -110,3 +110,136 @@ const countOddOrEven=(num=[1,7,8,4,6])=>{
     console.log(`odd ${odd} even ${even}`)
 }
 countOddOrEven()
+
+console.clear()
+
+                 
+let printNumbers=[3,5,6,78,8,9]
+let newArray=[]
+  for(i=0;i<printNumbers.length;i++){
+    newArray.push(printNumbers[i]+2)  
+  }
+// console.log(newArray)
+
+
+
+//console.log(printNumbers)
+
+let arr = [2,4,6,7,9]
+
+function add2(value,index){
+    if (index == 2){
+        return value + 2
+    }
+    return value
+}
+
+let stu = [
+    {
+        name:"varun",
+        age:2
+    },
+    {
+        name:"surya",
+        age:6
+    },
+    {
+        name:"suresh",
+        age:5
+    },
+    {
+        name:"lucy",
+        age:7
+    }
+]
+let output = arr.map((value)=>value+2)
+let output2 = arr.filter((value)=>  value%2==0 )
+let output3=stu.filter((value)=>value.age>2).map((value)=>value.name)
+
+
+
+
+
+
+
+
+function callback(element,index,arr){
+    // console.log(element)
+    if(element > 2){
+        return true
+    }
+
+    return false
+}
+
+function eAdichanCopyForEach(arr,callback){
+    for(index = 0; index < arr.length ;index++){
+        callback(arr[index],index,arr)
+    }
+}
+
+function eAdichanCopyMap(arr,callback){
+    let newArray = []
+    for(index = 0; index < arr.length ;index++){
+        returnValue =  callback(arr[index],index,arr)
+        newArray.push(returnValue)
+    }
+    return newArray
+}
+
+function eAdichanCopyFilter(arr,callback){
+    let newArray = []
+    for(index = 0; index < arr.length ;index++){
+        returnValue =  callback(arr[index],index,arr)
+        if (returnValue == true){
+            newArray.push(arr[index])
+        }
+    }
+    return newArray
+}                  
+arr1  =  [1,5,7,9,0]
+
+
+output = eAdichanCopyFilter(arr1,callback)
+console.log(output)
+
+
+
+
+
+
+
+function eAdichanCopyfor(index,stop,arr){
+    if(index == stop){
+        return  
+    }
+    return  eAdichanCopyfor(index++,stop,arr)
+}
+
+console.log(
+    eAdichanCopyfor(1,10,[])
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
