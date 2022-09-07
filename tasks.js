@@ -201,7 +201,7 @@ arr1  =  [1,5,7,9,0]
 
 
 output = eAdichanCopyFilter(arr1,callback)
-console.log(output)
+// console.log(output)
 
 
 
@@ -209,37 +209,13 @@ console.log(output)
 
 
 
-function eAdichanCopyfor(index,stop,arr){
-    if(index == stop){
-        return  
+function eAdichanCopyfor(index,arr){
+    console.log(arr[index])
+    if(index == arr.length -1){
+        return  1
+        
     }
-    return  eAdichanCopyfor(index++,stop,arr)
+    return  eAdichanCopyfor(++index,arr)
 }
-
-console.log(
-    eAdichanCopyfor(1,10,[])
-
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+eAdichanCpyfor(1,[1,2,3,4,5,6,7])
+console.clear()
