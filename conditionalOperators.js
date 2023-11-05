@@ -11,8 +11,14 @@ const b=20
 console.clear()
 console.log(!(a>b))
 
+
 //logicalOperators
+
  
+console.log(!((1==1)&&(2==2)))
+console.log(!((1==1)&&(2==2)))
+console.log(!((1==1)&&(2==2)))
+console.log(!((1==1)&&(2==2)))
 console.log(!((1==1)&&(2==2)))
 
 /* use to 
